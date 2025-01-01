@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "zodiac-horoscope-cli"
+version = "0.1.0"
+description = "zodiac-horoscope-cli"
+authors = ["Hong <hong539@github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "zodiac_horoscope" }]
+
+[tool.poetry.dependencies]
+python = "3.13.1"
+
+[tool.poetry.scripts]
+zodiac-horoscope = "zodiac_horoscope.zodiac_horoscope:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
